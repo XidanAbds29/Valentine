@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Valentine's Day, Ramisha 💝</title>
+  <meta name="description"
+    content="A Valentine's Day love letter for the most beautiful girl in the world — Ramisha Jahan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Floating Hearts Container -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- ============== STAGE 1: DO YOU LOVE ME? ============== -->
+  <section class="quiz-screen" id="quizScreen">
+    <div class="quiz-content">
+      <div class="quiz-bear">🧸</div>
+      <h1 class="quiz-question" id="quizQuestion">Do you love me?</h1>
+      <p class="quiz-sub" id="quizSub">Choose wisely... 😏</p>
+      <div class="quiz-buttons">
+        <button class="btn-yes" id="btnYes">Yes! 💖</button>
+        <button class="btn-no" id="btnNo">No 😤</button>
+      </div>
+      <!-- Hidden stages for escalation -->
+      <div class="no-counter" id="noCounter"></div>
+    </div>
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas"></canvas>
+  </section>
+
+  <!-- ============== STAGE 2: ENVELOPE ============== -->
+  <section class="landing" id="landing" style="display:none;">
+    <div class="envelope-wrapper" id="envelopeWrapper">
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="letter-peek">💌</div>
+        </div>
+      </div>
+      <p class="tap-text">tap to open your letter</p>
+    </div>
+  </section>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero hidden-section" id="hero">
+    <div class="sparkle-overlay" id="sparkleOverlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">Happy Valentine's Day</p>
+      <h1 class="hero-title">Ramisha Jahan</h1>
+      <p class="hero-tagline">You are my today and all of my tomorrows</p>
+      <div class="scroll-hint">
+        <span>scroll down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== LOVE LETTER ============== -->
+  <section class="section love-letter" id="loveLetter">
+    <div class="container">
+      <h2 class="section-title reveal-item">A Letter For You 💌</h2>
+      <div class="letter-card reveal-item">
+        <p class="letter-date">February 14, 2026</p>
+        <div class="typewriter-text" id="typewriterText">
+          <p>My Dearest Ramisha,</p>
+          <p>Every single day with you feels like a beautiful dream I never want to wake up from. Your smile lights up
+            my whole world, and your laughter is my favorite sound in the universe.</p>
+          <p>Thank you for being my person — my best friend, my partner, my everything. I fall deeper in love with you
+            every single day, and I didn't even know that was possible.</p>
+          <p>Happy Valentine's Day, baby. Here's to us, to our love, and to forever. 💕</p>
+          <p class="letter-sign">Forever Yours ❤️</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== GALLERY ============== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title reveal-item">Our Moments 📸</h2>
+      <p class="section-sub reveal-item">Every picture tells our story</p>
+      <div class="polaroid-grid">
+        <div class="polaroid reveal-item">
+          <div class="polaroid-img-wrap">
+            <img src="photo/couple-together.jpeg" alt="Us together" loading="lazy" />
+          </div>
+          <p class="polaroid-caption">Us 💕</p>
+        </div>
+        <div class="polaroid reveal-item">
+          <div class="polaroid-img-wrap">
+            <img src="photo/couple-kiss.png" alt="A sweet moment" loading="lazy" />
+          </div>
+          <p class="polaroid-caption">My Favorite Moment 💋</p>
+        </div>
+        <div class="polaroid reveal-item">
+          <div class="polaroid-img-wrap">
+            <img src="photo/couple-selfie.png" alt="Couple selfie" loading="lazy" />
+          </div>
+          <p class="polaroid-caption">My Best Friend 🥰</p>
+        </div>
+        <div class="polaroid reveal-item">
+          <div class="polaroid-img-wrap">
+            <img src="photo/ramisha-saree.png" alt="Ramisha in saree" loading="lazy" />
+          </div>
+          <p class="polaroid-caption">Absolutely Stunning ✨</p>
+        </div>
+        <div class="polaroid reveal-item">
+          <div class="polaroid-img-wrap">
+            <img src="photo/ramisha-night.png" alt="Ramisha at night" loading="lazy" />
+          </div>
+          <p class="polaroid-caption">Beautiful Like the Night Sky 🌙</p>
+        </div>
+        <div class="polaroid reveal-item">
+          <div class="polaroid-img-wrap">
+            <img src="photo/ramisha-cool.png" alt="Ramisha looking cool" loading="lazy" />
+          </div>
+          <p class="polaroid-caption">My Cool Girl 😎</p>
+        </div>
+        <div class="polaroid reveal-item">
+          <div class="polaroid-img-wrap">
+            <img src="photo/ramisha-cute.png" alt="Ramisha being cute" loading="lazy" />
+          </div>
+          <p class="polaroid-caption">The Cutest 🧸</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== REASONS ============== -->
+  <section class="section reasons" id="reasons">
+    <div class="container">
+      <h2 class="section-title reveal-item">Why I Love You 💖</h2>
+      <div class="reasons-grid">
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">😊</span>
+          <p>Your smile makes even the worst days feel okay</p>
+        </div>
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">🧠</span>
+          <p>You're the smartest and most driven person I know</p>
+        </div>
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">🤗</span>
+          <p>Your hugs feel like home</p>
+        </div>
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">😂</span>
+          <p>You laugh at all my stupid jokes (even the bad ones)</p>
+        </div>
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">💪</span>
+          <p>You make me want to be a better person every day</p>
+        </div>
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">🌟</span>
+          <p>You're the most beautiful person, inside and out</p>
+        </div>
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">🫶</span>
+          <p>You chose me, and I'll spend forever being grateful</p>
+        </div>
+        <div class="reason-card reveal-item">
+          <span class="reason-emoji">♾️</span>
+          <p>Because every reason in the world still wouldn't be enough</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== VIDEO SECTION ============== -->
+  <section class="section video-section" id="videoSection">
+    <div class="container">
+      <h2 class="section-title reveal-item">This You? 😍</h2>
+      <div class="video-frame reveal-item">
+        <video src="photo/ramisha-video.mp4" controls playsinline loop></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROMISE SECTION ============== -->
+  <section class="section promises" id="promises">
+    <div class="container">
+      <h2 class="section-title reveal-item">My Promises To You 🤞</h2>
+      <div class="promise-timeline">
+        <div class="promise-item reveal-item">
+          <div class="promise-icon">🌅</div>
+          <p>I promise to bring you chai every morning (okay, <em>most</em> mornings)</p>
+        </div>
+        <div class="promise-item reveal-item">
+          <div class="promise-icon">🎭</div>
+          <p>I promise to always make you laugh, even when you're trying to be mad at me</p>
+        </div>
+        <div class="promise-item reveal-item">
+          <div class="promise-icon">🛡️</div>
+          <p>I promise to always be your safe place</p>
+        </div>
+        <div class="promise-item reveal-item">
+          <div class="promise-icon">🌍</div>
+          <p>I promise to explore the world with you, one adventure at a time</p>
+        </div>
+        <div class="promise-item reveal-item">
+          <div class="promise-icon">💕</div>
+          <p>I promise to love you more with every passing day</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FINALE ============== -->
+  <section class="section finale" id="finale">
+    <div class="container">
+      <div class="finale-heart">💝</div>
+      <h2 class="finale-title">I Love You, Ramisha</h2>
+      <p class="finale-text">Today, tomorrow, and for all the days after that.</p>
+      <p class="finale-text small">Happy Valentine's Day 2026 💕</p>
+      <div class="finale-img">
+        <img src="photo/me-hoodie.png" alt="Me" />
+        <span class="plus-heart">❤️</span>
+        <img src="photo/ramisha-cute.png" alt="Ramisha" />
+      </div>
+      <div class="forever-badge">
+        <span>R</span> <span class="forever-x">♥</span> <span>R</span>
+        <p>forever & ever</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with ❤️ just for you</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
